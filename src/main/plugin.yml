@@ -1,0 +1,20 @@
+#name, main, version and api are required
+name: ExamplePlugin
+main: ExamplePlugin.MainClass
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.0"]
+
+load: POSTWORLD
+author: Nukkit Project
+description: Example plugin showing the API
+website: https://github.com/Nukkit/ExamplePlugin
+commands:
+  example:
+    description: Example command
+    usage: "/example"
+    permission: exampleplugin.command.example
+permissions:
+  exampleplugin.command.example:
+    description: "Allows the user to run the example command"
+    default: true
