@@ -4,7 +4,6 @@ import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.EventPriority;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.server.ServerCommandEvent;
-import cn.nukkit.utils.TextFormat;
 
 /**
  * author: MagicDroidX
@@ -17,8 +16,9 @@ public class EventListener implements Listener {
         this.plugin = plugin;
     }
 
-    @EventHandler(priority = EventPriority.HIGH, ignoreCancelled = true)
+    @EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = false) //DON'T FORGET THE ANNOTATION @EventHandler
     public void onServerCommand(ServerCommandEvent event) {
-        //todo something!
+        this.plugin.getLogger().info("ServerCommandEvent is called!");
+        //you can do more here!
     }
 }

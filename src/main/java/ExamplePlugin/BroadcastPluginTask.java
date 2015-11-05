@@ -13,7 +13,7 @@ public class BroadcastPluginTask extends PluginTask<MainClass> {
     }
 
     @Override
-    public void onRun(long currentTick) {
+    public void onRun(int currentTick) {
         this.getOwner().getLogger().info("I've run on tick " + currentTick);
     }
 }
