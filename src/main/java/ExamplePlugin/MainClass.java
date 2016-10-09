@@ -61,7 +61,7 @@ public class MainClass extends PluginBase {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        switch (command.getName()) {
+        switch (command.getName().toLowerCase()) {
             case "example":
                 try {
                     this.getLogger().info(Utils.readFile(new File(this.getDataFolder(), "string.txt")) + " " + sender.getName());
