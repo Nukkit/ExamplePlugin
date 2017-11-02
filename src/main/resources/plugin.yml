@@ -9,6 +9,12 @@ load: POSTWORLD
 author: Nukkit Project
 description: Example plugin showing the API
 website: https://github.com/Nukkit/ExamplePlugin
+depend:
+  - SomeDepend1
+  - SomeDepend2
+softdepend:
+  - SomeSoftDepend1
+  - SomeSoftDepend2
 commands:
   example:
     description: Example command
