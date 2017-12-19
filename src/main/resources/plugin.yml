@@ -1,20 +1,36 @@
 #name, main, version and api are required
 name: ExamplePlugin
-main: ExamplePlugin.MainClass
+main: cn.nukkit.exampleplugin.ExamplePlugin
 #remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
 version: "1.0.0"
 api: ["1.0.0"]
-
 load: POSTWORLD
 author: Nukkit Project
+# Authors and author will be added together in one list.
+authors: ["Example", "Another"]
 description: Example plugin showing the API
-website: https://github.com/Nukkit/ExamplePlugin
+website: https://github.com/NukkitX/ExamplePlugin
+# These dependencies are required for the plugin to start.
+depend: ["OtherPlugin", "ThisPlugin"]
+# These dependencies are not required.
+softdepend: ["PluginA", "PluginB"]
+# Log prefix in console
+prefix: "Example"
+# Plugin will be loaded before these. Any cyclic loadbefore's or dependencies's will throw errors!
+loadbefore: ["ImportantPlugin"]
+
 commands:
   example:
     description: Example command
     usage: "/example"
+    aliases: ["xample", "nukkitexample"]
     permission: exampleplugin.command.example
+    permission-message: "You do not have the required permission to run /example"
 permissions:
   exampleplugin.command.example:
     description: "Allows the user to run the example command"
     default: true
+    children:
+#     exampleplugin.command.example.test:
+#       description: "Use the test feature in the example command"
+#       default: true

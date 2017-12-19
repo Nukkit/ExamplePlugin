@@ -1,4 +1,4 @@
-package ExamplePlugin;
+package cn.nukkit.exampleplugin;
 
 import cn.nukkit.scheduler.PluginTask;
 
@@ -6,9 +6,9 @@ import cn.nukkit.scheduler.PluginTask;
  * author: MagicDroidX
  * ExamplePlugin Project
  */
-public class BroadcastPluginTask extends PluginTask<MainClass> {
+public class BroadcastPluginTask extends PluginTask<ExamplePlugin> {
 
-    public BroadcastPluginTask(MainClass owner) {
+    public BroadcastPluginTask(ExamplePlugin owner) {
         super(owner);
     }
 
