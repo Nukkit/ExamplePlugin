@@ -2,27 +2,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-	<!-- Don't use the Nukkit namespace for your own plugins -->
+    <!-- Don't use the Nukkit namespace for your own plugins -->
     <groupId>cn.nukkit</groupId>
     <artifactId>example-plugin</artifactId>
     <version>1.0.0</version>
     <name>ExamplePlugin</name>
     <description>An Example Nukkit Plugin</description>
-	<url>https://github.com/NukkitX/ExamplePlugin/</url>
-	
+    <url>https://github.com/NukkitX/ExamplePlugin/</url>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-	<repositories>
+    <repositories>
         <repository>
             <id>potestas-repo</id>
             <url>http://repo.potestas.xyz/</url>
         </repository>
     </repositories>
-	
+
     <dependencies>
         <dependency>
             <groupId>cn.nukkit</groupId>
