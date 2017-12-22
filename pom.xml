@@ -31,4 +31,8 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    
+    <build>
+        <defaultGoal>clean package</defaultGoal>
+    </build>
 </project>
