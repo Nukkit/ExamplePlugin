@@ -19,7 +19,7 @@
     <repositories>
         <repository>
             <id>potestas-repo</id>
-            <url>http://repo.potestas.xyz/</url>
+            <url>http://repo.potestas.xyz/main/</url>
         </repository>
     </repositories>
 
