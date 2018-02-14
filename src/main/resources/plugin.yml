@@ -3,7 +3,7 @@ name: ExamplePlugin
 main: cn.nukkit.exampleplugin.ExamplePlugin
 #remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
 version: "1.0.0"
-api: ["1.0.0"]
+api: ["1.0.5"]
 load: POSTWORLD
 author: Nukkit Project
 # Authors and author will be added together in one list.
@@ -11,7 +11,7 @@ authors: ["Example", "Another"]
 description: Example plugin showing the API
 website: https://github.com/NukkitX/ExamplePlugin
 # These dependencies are required for the plugin to start.
-depend: ["OtherPlugin", "ThisPlugin"]
+#depend: ["OtherPlugin", "ThisPlugin"]
 # These dependencies are not required.
 softdepend: ["PluginA", "PluginB"]
 # Log prefix in console
