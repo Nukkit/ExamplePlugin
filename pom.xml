@@ -18,8 +18,8 @@
 
     <repositories>
         <repository>
-            <id>potestas-repo</id>
-            <url>http://repo.potestas.xyz/main/</url>
+            <id>nukkitx-repo</id>
+            <url>http://repo.nukkitx.com/main/</url>
         </repository>
     </repositories>
 
