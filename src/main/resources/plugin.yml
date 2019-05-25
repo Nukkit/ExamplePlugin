@@ -30,7 +30,7 @@ permissions:
   exampleplugin.command.example:
     description: "Allows the user to run the example command"
     default: true
-    children:
+#   children:
 #     exampleplugin.command.example.test:
 #       description: "Use the test feature in the example command"
 #       default: true
