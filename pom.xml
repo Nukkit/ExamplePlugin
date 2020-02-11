@@ -19,7 +19,7 @@
     <repositories>
         <repository>
             <id>nukkitx-repo</id>
-            <url>http://repo.nukkitx.com/main/</url>
+            <url>http://repo.nukkitx.com/maven-snapshots/</url>
         </repository>
     </repositories>
 
