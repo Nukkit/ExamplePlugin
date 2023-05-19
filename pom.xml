@@ -8,7 +8,7 @@
     <version>1.0.0</version>
     <name>ExamplePlugin</name>
     <description>An Example Nukkit Plugin</description>
-    <url>https://github.com/NukkitX/ExamplePlugin/</url>
+    <url>https://github.com/CloudburstMC/ExamplePlugin/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +19,7 @@
     <repositories>
         <repository>
             <id>nukkitx-repo</id>
-            <url>http://repo.nukkitx.com/maven-snapshots/</url>
+            <url>http://repo.opencollab.dev/maven-snapshots/</url>
         </repository>
     </repositories>
 
