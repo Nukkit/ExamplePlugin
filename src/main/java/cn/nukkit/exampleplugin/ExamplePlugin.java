@@ -1,4 +1,4 @@
-package ExamplePlugin;
+package cn.nukkit.exampleplugin;
 
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
@@ -15,7 +15,7 @@ import java.util.LinkedHashMap;
  * author: MagicDroidX
  * NukkitExamplePlugin Project
  */
-public class MainClass extends PluginBase {
+public class ExamplePlugin extends PluginBase {
 
     @Override
     public void onLoad() {
@@ -61,7 +61,7 @@ public class MainClass extends PluginBase {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        switch (command.getName()) {
+        switch (command.getName().toLowerCase()) {
             case "example":
                 try {
                     this.getLogger().info(Utils.readFile(new File(this.getDataFolder(), "string.txt")) + " " + sender.getName());

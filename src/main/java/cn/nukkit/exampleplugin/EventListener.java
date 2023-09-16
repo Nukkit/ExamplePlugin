@@ -1,4 +1,4 @@
-package ExamplePlugin;
+package cn.nukkit.exampleplugin;
 
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.EventPriority;
@@ -10,9 +10,9 @@ import cn.nukkit.event.server.ServerCommandEvent;
  * NukkitExamplePlugin Project
  */
 public class EventListener implements Listener {
-    MainClass plugin;
+    private final ExamplePlugin plugin;
 
-    public EventListener(MainClass plugin) {
+    public EventListener(ExamplePlugin plugin) {
         this.plugin = plugin;
     }
 
